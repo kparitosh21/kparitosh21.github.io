@@ -1,9 +1,18 @@
 /*----------*/
 
 #nav-bar {
-	position :sticky;
+	position :fixed;
+	width:100%;
+	background : #ffffff;
 	top : 0;
 	z-index : 10;
+}
+
+body, html
+{
+	margin:0;
+	padding:0;
+	height:100%;
 }
 
 /* when I add image *******
@@ -17,29 +26,59 @@
 
 *******/
 
-/* ================ Particles ==================== */
 
-body
-{
-	margin:0;
-	padding:0;
-	height:100vh;
+.bg_image {
+  /* The image used */
+  background-image: url("img/paari.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+
+
+
+/*  ====================For Particle JS ===================
 #particles-js
 {
-	background-image :linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/ranvijay.png);
-	background-size:cover;
+	
+	
+	background-image :linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/paari.jpg) ;
+	background-repeat: no-repeat;
 	background-position:center;
+	background-size:cover;
 	color:#efefef ! important;
-	background-attachment :fixed;
 	padding-top:50px;
 	padding-bottom :50px;
 	
+	
+	/*
+	 ==== For parallax effect ========
+	
+	background-attachment :fixed;
+	
+	
 }
 
-/* ================ Particles End ==================== */
+*/
 
 
+
+	
+
+/* ================ Particles End ============================== */
+
+
+/*    ==================== Welcome Text ======================  */
+
+
+
+/*  ============== THE NAV BAR ==================    */
 
 .navbar-nav li{
 	padding : 0 10px;
@@ -47,14 +86,14 @@ body
 }
 
 .navbar-nav li a{
-	float  : right;
+	float  : right; 
 	text-align::left;
 	
 }
 
 #nav-bar ul li a:hover
 {
-	color : #007bff !important; /******** blue importnt */
+	color : #007bff !important; /******** blue importnt  **********/
 }
 
 .navbar-toggler{
@@ -67,6 +106,60 @@ body
 	color:#555 !important;
 	font-weight:600;
 }
+
+
+
+
+
+/*   ================== For New Nav Bar =====================   
+
+header
+{ 
+	background: linear-gradient(rgba(0,0,100,0.6),rgba(0,0,100,0.6)),url(img/paari.jpg);
+	background-size:cover;
+	background-position:center;
+	height :100vh;
+	
+}
+
+nav 
+{
+	position:fixed;
+	width:100%;
+	line-height:60px;
+}
+
+nav ul 
+{
+	float: right;
+	margin:0;
+	padding-right:42px;
+}
+
+nav ul li
+{
+	display:inline-block;
+	padding: 16px 32px;
+}
+
+nav ul li a
+{
+	text-decoration:none;
+	color: #fff;
+	font-size:16px;
+}
+
+.logo 
+{
+	height:48px;
+	float:left;
+	margin:16px 48px;
+}
+	
+	
+*/
+
+
 
 
 
@@ -573,9 +666,63 @@ blockquote::after
 
 /*---------------Extra scroll effect------------*/
 
+
+/*
+
+
+
+/*    ==================== Welcome Text ======================  */
+
+.containerText {
+	text-align: center;
+	position:absolute;
+	top:50%;
+	left: 50%;
+	width:100%;
+	transform: translate(-50%,-50%);
+}
+
+.containerText span{
+	text-transform:uppercase;
+	display:block;
+		
+}
+
+.text1{
+	color : white;
+	font-size:40px;
+	font-weight:700;
+	letter-spacing:7px;
+	margin-bottom:20px;
+	background:black;
+	position:relative;
+	animation: text 3s 1;
+}
+
+.text2{
+	font-size:15px;
+	color: #6ab04c;
+}
+
+@keyframes text{
+	
+	0%{
+		color: black;
+		margin-bottom: -40px;
+	}
+	30%{
+		letter-spacing:25px;
+		margin-bottom: -40px;
+	}
+	85%{
+		letter-spacing:8px;
+		margin-bottom:-40px;
+	}
+}
 	
 
-	
+
+*/
 	
 
 
